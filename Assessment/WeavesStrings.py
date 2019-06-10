@@ -41,5 +41,19 @@ def alternateStrings(str1,str2):
 
     return weave_str
 
+def usingZip(str1,str2) :
+    weaved_string = zip(list(str1), list(str2))
+    weave_str = ""
+    for l in weaved_string :
+        weave_str += "".join(l)
+    if(len(str1) >  len(str2)):
+        weave_str += str1[len(str1) - len(str2) :]
+    elif(len(str2) >  len(str1)):
+        weave_str += str2[len(str2) - len(str1) :]
+    
+    return weave_str
+
+
+
 str1, str2 = input().split()
-print(alternateStrings(str1, str2))
+print(usingZip(str1, str2))
