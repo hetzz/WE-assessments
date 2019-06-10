@@ -28,7 +28,7 @@ class RockPaper{
         String gamePLayed = sc.nextLine();
         int [] points = new int[3];
         points = pointsCalculatedfromGame(gamePLayed);
-        System.out.println(points[0]+","+points[1]+","+points[2]);
+        System.out.println(points[0]+","+points[1]+",="+points[2]);
         
     }
 }

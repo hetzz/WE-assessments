@@ -22,5 +22,5 @@ def pointsCalculatedforGame(PlayersString):
 
 game = input()
 wonLossDrawSequence = pointsCalculatedforGame(game)
-print(str(wonLossDrawSequence[0]) + ","+str(wonLossDrawSequence[1]) + "," + str(wonLossDrawSequence[2]))
+print(str(wonLossDrawSequence[0]) + ","+str(wonLossDrawSequence[1]) + ",=" + str(wonLossDrawSequence[2]))
 
