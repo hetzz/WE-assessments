@@ -1,11 +1,11 @@
 def checkWinner(playedValue):
-    playedString = ["RP" , "RS", "SP" , "SR" , "PR" , "PS" , "RR" , "PP" , "SS"]
+    allCombinations = ["RP" , "RS", "SP" , "SR" , "PR" , "PS" , "RR" , "PP" , "SS"]
     pointsGained = [-1, 1 ,1,-1,1,-1, 0, 0, 0]
-    return pointsGained[playedString.index(playedValue)]
+    return pointsGained[allCombinations.index(playedValue)]
 
 ###################################################################
 
-def GamePlay(PlayersString):
+def pointsCalculatedforGame(PlayersString):
     playersString = list(PlayersString.split(","))
     wonLossDrawSequence = [0 for i in range(3)]
     for i in playersString :
@@ -21,6 +21,6 @@ def GamePlay(PlayersString):
 ########################################################
 
 game = input()
-wonLossDrawSequence = GamePlay(game)
+wonLossDrawSequence = pointsCalculatedforGame(game)
 print(str(wonLossDrawSequence[0]) + ","+str(wonLossDrawSequence[1]) + "," + str(wonLossDrawSequence[2]))
 
