@@ -1,5 +1,5 @@
 def isAmbiguos(firstParam, seconParam):
-    return (firstParam <= 12 and seconParam <= 12)
+    return ((firstParam <= 12 and seconParam <= 12 ) or firstParam == seconParam)
 
 
 def dateAmbiguity(dateStr) :
