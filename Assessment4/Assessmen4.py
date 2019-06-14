@@ -22,6 +22,7 @@ def terminus(point , directions) :
             point = step_NSEW(point , str(direction[:-2] + str(direction[-1])))
     return point
 
+###################################################
 point = [1,1]
 direction = ["1N", "3NW"]
 
