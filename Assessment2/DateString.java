@@ -1,7 +1,7 @@
 import java.util.*;
 class DateString{
     public static Boolean isAmbiguous(int firstParam, int secondParam){
-        return ((firstParam <= 12 && secondParam <= 12) ||  firstParam == seconParam);
+        return ((firstParam <= 12 && secondParam <= 12) ||  firstParam == secondParam);
     }
 
     public static Boolean dateAmbiguity(String dateString){
