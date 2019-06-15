@@ -6,9 +6,9 @@ def step_increment(direction):
 
 def step_NSEW(point,direction):
     if(direction[-1] == "N" or direction[-1] == "S"):
-        point[1] += int(direction[-2])* int(step_increment(direction[-1]))
+        point[1] += int(direction[:-1])* int(step_increment(direction[-1]))
     else :
-        point[0] += int(direction[-2])* int(step_increment(direction[-1]))
+        point[0] += int(direction[:-1])* int(step_increment(direction[-1]))
     return point
 
 ################################################################
@@ -24,6 +24,6 @@ def terminus(point , directions) :
 
 ###################################################
 point = [1,1]
-direction = ["1N", "3NW"]
+direction = ["1N", "10NW"]
 
 print(terminus(point, direction))
