@@ -18,7 +18,7 @@ class Pangram{
         return true;
     }
     public static void main (String args[]){
-        String s = "Pack my box with five dozen liquor jugs.";
+        String sentence = "Pack my box with five dozen liquor jugs.";
         System.out.println("The fact that the input string is a panagram is : " +isPangram(sentence));
     }
 }
