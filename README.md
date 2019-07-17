@@ -8,4 +8,4 @@
 * Each problem statement had to be solved in atleast two laguages.
 * Some problem statements had bonus points for special modifications which were given during those 30 minutes.
 
-To access the Problem Statement for each assessment, the url was of the format https://wise.talentsprint.com/~shifu/Assessment<Assessment_No>.html
+To access the Problem Statement for each assessment, the url format is: https://wise.talentsprint.com/~shifu/Assessment<Assessment_No>.html
